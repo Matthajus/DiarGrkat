@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/border_style"
+    android:stretchColumns="1"
+    android:id="@+id/tableLayout">
+
+    <TableRow
+        android:id="@+id/detailFirstRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/detailDenTextView"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:padding="1dip"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TableRow
+            android:id="@+id/detailFirstRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/detailMesiacTextView"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:padding="1dip"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailMeninyTextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dip"
+                android:textColor="#000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/detailPoznamkaTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="5dip"
+                android:textAlignment="textEnd"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+        </TableRow>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/detailSecondRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/detailNazovDnaTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+        <TableRow
+            android:id="@+id/detailSecondRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/detailSvatyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:textAlignment="textStart"
+                android:textColor="#FF0000"
+                android:textSize="12sp" />
+
+        </TableRow>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/detailThirdRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/detail_border_style"
+        >
+
+        <TextView
+            android:id="@+id/detailCitanieTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:padding="5dip"
+            android:textAlignment="textStart"
+            android:textSize="12sp"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/detailFourthRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/detail_border_style"
+        >
+
+        <Button
+            android:id="@+id/detailUlozitButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Uložiť" />
+
+
+        <EditText
+            android:id="@+id/detailKomentarEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:padding="5dp"
+            android:hint="Miesto pre poznámky"
+            android:textAlignment="textStart"
+            android:textSize="12sp"
+            android:background="@null"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/detailFifthRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/detailImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:src="@drawable/cross"
+            android:textAlignment="center" />
+
+
+    </TableRow>
+
+</TableLayout>
